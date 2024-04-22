@@ -1,8 +1,8 @@
-import {encoded, translations} from './data.js'
+import { encoded, translations } from "./data.js";
+import decode from "./utils/decode.js";
 
-console.log("Let's rock")
-console.log(encoded, translations)
+console.log("Let's rock");
+console.log(encoded, translations);
 
-
-
-// console.log(decoded)
+const decoded = decode(encoded, translations);
+console.log(decoded);
